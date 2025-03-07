@@ -1,0 +1,5 @@
+# The Cache
+1. `?v=1.0` è un **parametro aggiunto alla query dell'url**.
+Questo parametro permette di regolare il caching del css. `v 1.0` si riferisce proprio alla **versione del css**, modificando il css il browser potrebbe non notare il cambiamento e continuare a caricare la versione precedente, cambiando il parametro `?v=1.0` a, per esempio, `?v=1.1` il browser viene **forzato a trattare il css come un nuovo file**, non usando la cache (memoria temporanea) precedentemente salvata.
+
+2. Quando il browser visita per la prima volta un sito web, alcune **risorse e file** come immagini, css e html vengono **salvati in una parte della RAM del computer chiamata cache**. La cache è una **memoria temporanea** che viene letta per caricare velocemente file già visti per non scaricarli di volta in volta, questo permette di avere performance più veloci. **La cache viene aggiornata quando i server del browser comunicano che i file di un sito sono nuovi**, magari tramite un cambiamento nel nome o nei parametri di query.

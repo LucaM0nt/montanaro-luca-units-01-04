@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>script.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#calculateSupply">calculateSupply</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#calculateSupplyLiters">calculateSupplyLiters</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#maxAge">maxAge</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">script.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @file script.js
+ * @date February 2025
+ * @author Luca Montanaro
+ * 
+ * @description This file contains the JavaScript code for the Coffee Supply Calculator exercise.
+ * 
+ * @remarks
+ * This exercise demonstrates the use of function parameters in JavaScript.
+ * The function calculateSupply takes two parameters and logs the total amount of coffee needed for the rest of the life.
+ * The function calculateSupplyLiters takes two parameters and logs the total amount of liters of coffee needed for the rest of the life.
+ * 
+ * Functions included:
+ * - function calculateSupply - Uses function parameters to calculate and log the total amount of coffee needed.
+ * - function calculateSupplyLiters - Uses function parameters to calculate and log the total amount of liters of coffee needed.
+ * 
+ * The calculateSupply function takes two parameters: age and amountPerDay.
+ * The calculateSupplyLiters function takes two parameters: age and litersPerDay.
+ * They calculate the total amount of coffee cups or liters of coffee needed, based on the provided age and daily consumption.
+ * They log the result to the console.
+ * 
+ * By calling the functions with different arguments, you can see the total amount of coffee cups or liters of coffee needed for different ages and daily consumption rates.
+ */
+
+/**
+ * This is a global constant that represents the maximum age, to be used across all the document.
+ * @constant {number}
+ * @default 99
+ */
+const maxAge = 99;
+
+/**
+ * This function calculates the total amount of coffee needed for the rest of the life based on the provided age and daily consumption.
+ * @param {number} age - The current age.
+ * @param {number} amountPerDay - The amount of coffee consumed per day.
+ * @returns {void}
+ * @example
+ * calculateSupply(25, 2); // Logs "You will need 53900 cups of coffee to last you until the age of 99"
+ */
+function calculateSupply(age, amountPerDay) {
+  let totalAmount = (maxAge - age) * 365 * amountPerDay;
+  console.log(`You will need ${totalAmount} cups of coffee to last you until the age of ${maxAge}`);
+}
+
+// Calling the function with different arguments to see the total amount of coffee needed.
+calculateSupply(25, 2); 
+calculateSupply(40, 3);
+calculateSupply(60, 1);
+
+/**
+ * This function calculates the total amount of liters of coffee needed for the rest of the life based on the provided age and daily consumption.
+ * @param {number} age - The current age.
+ * @param {number} litersPerDay - The amount of liters of coffee consumed per day in liters.
+ * @returns {void}
+ * @example
+ * calculateSupplyLiters(25.3, 2); // Logs "You will need 53900 liters of coffee to last you until the age of 99"
+ */
+function calculateSupplyLiters(age, litersPerDay) {
+  let totalAmount = (maxAge - age) * 365 * litersPerDay;
+  console.log(`You will need ${totalAmount} liters of coffee to last you until the age of ${maxAge}`);
+}
+
+// Calling the function with different arguments to see the total amount of liters of coffee needed.
+calculateSupplyLiters(25.3, 2);
+calculateSupplyLiters(40.7, 3);
+calculateSupplyLiters(60.2, 1);</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.4</a> on Wed Feb 26 2025 16:15:50 GMT+0100 (Ora standard dell’Europa centrale) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
