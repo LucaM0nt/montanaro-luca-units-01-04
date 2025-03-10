@@ -4,10 +4,11 @@
  * @date February 2025
  * @author Luca Montanaro
  * 
+ * @remarks
  * This exercise demonstrates the use of function parameters in JavaScript.
  * The function tellFortune takes four parameters and returns a string that predicts the future.
  * 
- * @function tellFortune - Uses function parameters to generate a fortune message.
+ * function tellFortune - Uses function parameters to generate a fortune message.
  * 
  * The tellFortune function takes four parameters: jobTitle, location, partner, and numKids.
  * It returns a string that includes these parameters to create a fortune message.
